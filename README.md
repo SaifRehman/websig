@@ -16,6 +16,8 @@
 # Introduction
 Websig is P2P Signalling server for WEBRTC built on top of IPFSPubSub and WEBRTC Protocol. It is able to create peer to peer webrtc data channels and audio/video conferencing in your frontend applications
 
+Please 🌟 the Repo if you liked it. Thanks !
+
 # Usuage
 1. Install the library
 ```
@@ -57,3 +59,7 @@ webrtc.send('Hello World!!');
 # Todo
 * Support Audio/Video channels
 * Create an example app using websig
+
+## Author
+[SaifRehman](SaifRehman.github.io)
+
