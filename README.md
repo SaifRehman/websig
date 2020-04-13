@@ -48,3 +48,12 @@ webrtc.ispeerjoined.subscribe(data => {
 // sending message
 webrtc.send('Hello World!!');
 ```
+# Supports
+1. Browserify
+2. Angular
+3. React 
+4. VUE
+
+# Todo
+* Support Audio/Video channels
+* Create an example app using websig
