@@ -1,10 +1,6 @@
 <h1 align="center">
   <br>
   <a href="https://github.com/SaifRehman/websig"><img src="https://raw.githubusercontent.com/SaifRehman/websig/master/websig.png" alt="Lotion" ></a>
-  <br>
-      Websig
-  <br>
-  <br>
 </h1>
 
 <h4 align="center">P2P Signalling server built with IPFSPubSub and WEBRTC</h4>
