@@ -30,7 +30,6 @@ function websig(roomname, iceserver) {
                 sender: this.ipfsid
             }));
         } else {
-            console.log('all ice has been sent');
         }
     });
     const self = this;
@@ -39,14 +38,10 @@ function websig(roomname, iceserver) {
         id: 0
     });
     this.datachannel.onclose = function (event) {
-        console.log(' data channel close', event);
     };
     this.datachannel.onerror = function (err) {
-        console.log(' data channel error', event);
     };
-    this.datachannel.onmessage = function (event) {
-        
-        console.log(event.data)
+    this.datachannel.onmessage = function (event) {        
         self.datachannelData.next(event.data);
     }
     this.ipfs.once('ready', () => this.ipfs.id((err, info) => {
@@ -56,20 +51,17 @@ function websig(roomname, iceserver) {
         this.ipfsid = info.id
         this.room = Room(this.ipfs, this.roomname)
         this.room.on('peer joined', (peer) => {
-            console.log('peer ' + peer + ' joined')
             this.peer = peer;
 
             this.ispeerjoined.next(true);
         })
         this.room.on('peer left', (peer) => {
-            console.log('peer ' + peer + ' left');
             this.ispeerjoined.next(false);
         })
         this.room.on('message', (message) => {
             var bigmsg = JSON.parse(message.data.toString());
             const msg = bigmsg.message;
             const sender = bigmsg.sender;
-            console.log(sender, this.ipfsid, bigmsg)
             if (sender !== this.ipfsid) {
                 if (msg.ice) {
                     if (this.pc) {
@@ -126,7 +118,6 @@ websig.prototype.connectWEBRTC = function () {
     }
 }
 websig.prototype.send = function (msg) {
-    console.log(this.datachannel.readyState)
     if (this.datachannel.readyState === 'open') {
         this.datachannel.send(msg);
     }

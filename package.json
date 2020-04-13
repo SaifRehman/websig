@@ -1,6 +1,6 @@
 {
   "name": "websig",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "P2P signalling server for WEBRTC",
   "main": "index.js",
   "author": "Saif ur Rehman",
@@ -22,5 +22,13 @@
     "p2p",
     "signalling",
     "datachannels"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaifRehman/websig.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SaifRehman/websig/issues"
+  },
+  "homepage": "https://github.com/SaifRehman/websig#readme"
 }
