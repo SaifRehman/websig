@@ -9,7 +9,7 @@ $ npm i
 
 2. Run browserify 
 ```
-$ browserify app.js -o public/js/app.js -d
+$ browserify index.js -o public/js/app.js -d
 ```
 
 3. Run the app
