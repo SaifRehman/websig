@@ -52,13 +52,32 @@ webrtc.send('Hello World!!');
 ```
 # Supports
 1. Browserify
-2. Angular
 3. React 
 4. VUE
 
 # Todo
 * Support Audio/Video channels
 * Create an example app using websig
+* Add support for Angular and TS
+
+# Example app
+
+1. Navigate to example folder
+```sh
+$ cd example
+$ npm i 
+```
+
+2. Run browserify 
+```
+$ browserify app.js -o public/js/app.js -d
+```
+
+3. Run the app
+```
+$ http-server
+```
+
 
 ## Author
 [SaifRehman](SaifRehman.github.io)

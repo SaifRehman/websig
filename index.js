@@ -60,6 +60,7 @@ function websig(roomname, iceserver) {
         })
         this.room.on('message', (message) => {
             var bigmsg = JSON.parse(message.data.toString());
+            console.log(bigmsg);
             const msg = bigmsg.message;
             const sender = bigmsg.sender;
             if (sender !== this.ipfsid) {
