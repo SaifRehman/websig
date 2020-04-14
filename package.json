@@ -1,8 +1,8 @@
 {
   "name": "websig",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "P2P signalling server for WEBRTC",
-  "main": "index.js",
+  "main": "bundle.js",
   "author": "Saif ur Rehman",
   "license": "MIT",
   "dependencies": {
