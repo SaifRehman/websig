@@ -59,6 +59,7 @@ webrtc.send('Hello World!!');
 * Support Audio/Video channels
 * Create an example app using websig
 * Add support for Angular and TS
+* Support Multi Party webrtc channels
 
 # Example app
 
