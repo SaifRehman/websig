@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "websig": "0.0.5"
+    "websig": "0.0.6"
   }
 }

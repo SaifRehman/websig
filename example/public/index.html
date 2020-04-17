@@ -1,13 +1,99 @@
 <!DOCTYPE html>
 <html>
-  <body>
-      <button id="myBtn" >connect WEBRTC</button>
-      <input type="text" id="myText" value="" placeholder="message">
-      <button id="myBtn1">Send</button>
-      <script src="./js/app.js"></script>
-      <h3>Messages</h3>
-      <div id="new">
-      <p id="demo"></p>
-  </div>
-    </body>
+
+<body>
+    <script src="./js/app.js"></script>
+    <h3>Peers Joined</h3>
+    <div id="new1">
+        <p id="demo1"></p>
+    </div>
+    <button id="myBtn">CONNECT</button>
+    <div class="container1">
+        <div class="flex-item">
+            <video autoplay="true" id="videotag" width="300" height="300"></video>
+        </div>
+        <div class="flex-item">
+            <video autoplay="true" id="peer1" width="300" height="300"></video>
+        </div>
+        <div class="flex-item">
+            <video autoplay="true" id="peer2" width="300" height="300"></video>
+        </div>
+    </div>
+    <input type="text" id="myText" value="" placeholder="message">
+    <button id="myBtn1">Send</button>
+    <h3>Messages</h3>
+    <div class="container" id="new">
+        <p id="demo"></p>
+    </div>
+</body>
+<style>
+    .container1 {
+        display: flex;
+    }
+
+    .fixed {
+        width: 200px;
+    }
+
+    .flex-item {
+        flex-grow: 1;
+    }
+
+    .container {
+        border: 2px solid #dedede;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    .darker {
+        border-color: #ccc;
+        background-color: #ddd;
+    }
+
+    .container::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .container img {
+        float: left;
+        max-width: 60px;
+        width: 100%;
+        margin-right: 20px;
+        border-radius: 50%;
+    }
+
+    .container img.right {
+        float: right;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .time-right {
+        float: right;
+        color: #aaa;
+    }
+
+    .time-left {
+        float: left;
+        color: #999;
+    }
+
+    #container {
+        margin: 0px auto;
+        width: 500px;
+        height: 375px;
+        border: 10px #333 solid;
+    }
+
+    #videoElement {
+        width: 500px;
+        height: 375px;
+        background-color: #666;
+    }
+</style>
+
 </html>
